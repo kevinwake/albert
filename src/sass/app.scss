@@ -1,0 +1,23 @@
+//
+// Albert Stylesheet
+// -----------------------------------------------------------------------------
+
+// Default font isze
+body {
+  font-size: 16px;
+}
+
+// Page maximum width
+.container {
+  max-width: 1024px !important;
+}
+
+// Intro paragraph
+.intro {
+  font-size: 1.375em;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
