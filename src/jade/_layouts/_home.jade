@@ -1,0 +1,30 @@
+block variables
+
+doctype html
+html(lang="en-us")
+
+  include ../_parts/_head
+
+  body
+
+    // Navigation
+    include ../_parts/_navigation
+
+    // Main Document
+    main.main(role="main")
+
+      // Hero Section
+      section.jumbotron
+        .container
+          block hero
+
+      // Main Content
+      section.content
+        .container
+          block content
+
+    // Pre-footer
+    include ../_parts/_pre-footer
+
+    // Footer
+    include ../_parts/_footer

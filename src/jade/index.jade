@@ -1,0 +1,32 @@
+extends _layouts/_home
+
+block variables
+  - var pathRoot = ""
+  - var pageDesc = "Front page description"
+  - var pageClass = "home"
+
+block hero
+  h1 Albert
+  p Prototyping kit based on Jade, Bootstrap, Gulp and Browsersync.
+  p
+    a.btn.btn-primary.btn-lg(href="#{pathRoot}page" role="button") Learn more
+
+block content
+  h2 Bootstrap Grid
+  .row
+    .col-sm-4
+      h3 The First Column
+      p.
+        Curabitur ac luctus massa. Duis est duinum, hendrerit vitae lectus eu,  bibendum semper sapien. Sed ut odio rutrum quam at semper mattis.
+    .col-sm-4
+      h3 The Second Column
+      p.
+        Mauris vulputate velit nunc vehicul egestas. Sed ac elit commodo, 
+        mollis metus at, pellentesq leo. Mauris consequat diam odio, at 
+        bibendum dolor elementum nec.
+    .col-sm-4
+      h3 The Third Column
+      p.
+        Aenean fringill place commodo. Tenean quis them bibendum, 
+        imperiet congue, henderit mi. Sed vestibulum fringilla tellus, 
+        vel dapibus lorem mattis laoreet.

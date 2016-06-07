@@ -1,0 +1,12 @@
+head
+  meta(charset="utf-8")
+  if pageTitle
+    title #{pageTitle} :: Albert
+  else
+    title Albert :: Static Site Starter Kit
+  meta(name="description" content="#{pageDesc}")
+  //- Viewport for Mobile
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  //- Stylesheets
+  link(href="#{pathRoot}css/bootstrap.min.css" rel="stylesheet")
+  link(href="#{pathRoot}css/app.css" rel="stylesheet")
