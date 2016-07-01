@@ -8,7 +8,6 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 
 const $ = gulpLoadPlugins();
 const AUTOPREFIXER_BROWSERS = [
-  '> 2%',
   'Android >= 4.4',
   'last 3 Chrome versions',
   'last 3 Edge versions',
