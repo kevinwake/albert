@@ -11,7 +11,7 @@
     "url": "https://github.com/kevinwake/albert.git"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^3.3.7",
     "jquery": "^3.1.0"
   },
   "devDependencies": {
