@@ -3,12 +3,12 @@
   "description": "Prototyping kit based on Jade, Bootstrap, Gulp and Browsersync.",
   "version": "1.0.0",
   "author": {
-    "name": "Kevin Wake",
-    "url": "https://kevinwake.com"
+    "name": "Radek Stangel",
+    "url": "https://radekstangel.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kevinwake/albert.git"
+    "url": "https://github.com/radekstangel/albert.git"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
