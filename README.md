@@ -13,4 +13,4 @@ Prototyping kit based on Jade, Bootstrap, Gulp and Browsersync.
 ## License
 
 [MIT license](http://opensource.org/licenses/MIT)
-Copyright 2016 Kevin Wake
+Copyright 2016 Radek Stangel
