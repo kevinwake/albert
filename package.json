@@ -1,6 +1,6 @@
 {
   "name": "albert",
-  "description": "Prototyping kit based on Jade, Bootstrap, Gulp and Browsersync.",
+  "description": "Prototyping kit based on Pug, Bootstrap, Gulp and Browsersync.",
   "version": "1.0.0",
   "author": {
     "name": "Radek Stangel",
@@ -15,15 +15,15 @@
     "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "babel-core": "^6.21.0",
-    "babel-preset-es2015": "^6.18.0",
-    "browser-sync": "^2.18.5",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
     "gulp-if": "^2.0.2",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.4.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.0.0",
+    "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8"
   },
   "scripts": {
@@ -31,7 +31,7 @@
     "dist": "gulp dist"
   },
   "engines": {
-    "node": ">=4.4.5"
+    "node": ">=6.9.4"
   },
   "license": "MIT"
 }
