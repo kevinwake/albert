@@ -18,7 +18,8 @@ gulp.task('default', ['dist'], () => {
     logPrefix: 'Albert',
     server: {
       baseDir: ['app']
-    }
+    },
+    port: 3113
   });
   gulp.watch(['app/**/*.html'], browserSync.reload);
   gulp.watch(['src/jade/**/*.jade'], ['jade']);
