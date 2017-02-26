@@ -10,6 +10,7 @@ body {
 // Page maximum width
 .container {
   max-width: 1024px !important;
+  width: 100%;
 }
 
 // Intro paragraph
@@ -17,7 +18,17 @@ body {
   font-size: 1.375em;
 }
 
+// Aside menu
 .menu {
   list-style-type: none;
   padding: 0;
+}
+
+// Jumbotron
+.jumbotron {
+  font-size: 1.2em;
+
+  .btn {
+    margin-right: 0.5em;
+  }
 }
