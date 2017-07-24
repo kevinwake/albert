@@ -1,4 +1,4 @@
-# Albert
+# Albert [DEPRECATED]
 
 Prototyping kit based on Pug/Jade, Bootstrap 4, Gulp and Browsersync.
 
