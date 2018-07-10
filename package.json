@@ -1,37 +1,23 @@
 {
   "name": "albert",
-  "description": "Prototyping kit based on Pug, Bootstrap, Gulp and Browsersync.",
-  "version": "1.0.0",
-  "author": {
-    "name": "Radek Stangel",
-    "url": "https://radekstangel.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/radekstangel/albert.git"
-  },
+  "version": "2.0.0",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "jquery": "^3.2.1"
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.18.12",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-if": "^2.0.2",
-    "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-util": "^3.0.8"
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1"
   },
   "scripts": {
     "start": "gulp",
-    "dist": "gulp dist"
-  },
-  "engines": {
-    "node": ">=6.10.1"
-  },
-  "license": "MIT"
+    "dist": "gulp build"
+  }
 }
