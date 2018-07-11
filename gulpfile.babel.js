@@ -12,7 +12,7 @@ const $ = gulpLoadPlugins();
  *   Default :: Development :: Watch For Changes And Reload
  * -----------------------------------------------------------------------------
  */
-gulp.task('default', ['dist'], () => {
+gulp.task('default', ['build'], () => {
   browserSync({
     notify: false,
     logPrefix: 'Albert',
@@ -22,15 +22,15 @@ gulp.task('default', ['dist'], () => {
     port: 3113
   });
   gulp.watch(['app/**/*.html'], browserSync.reload);
-  gulp.watch(['src/jade/**/*.jade'], ['jade']);
+  gulp.watch(['src/pug/**/*.pug'], ['pug']);
   gulp.watch(['src/sass/**/*.scss'], ['sass']);
 });
 
 /**
- *   Dist :: Build Distribution Files
+ *   Build :: Build Application
  * -----------------------------------------------------------------------------
  */
-gulp.task('dist', ['vendor:css', 'vendor:js', 'jade', 'sass']);
+gulp.task('build', ['vendor:css', 'vendor:js', 'pug', 'sass']);
 
 /**
  *   Vendor JS :: Copy Vendor JavaScript
@@ -38,8 +38,8 @@ gulp.task('dist', ['vendor:css', 'vendor:js', 'jade', 'sass']);
  */
 gulp.task('vendor:js', () =>
   gulp.src([
-    'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    'node_modules/jquery/dist/jquery.min.js'
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    'node_modules/jquery/dist/jquery.slim.min.js'
   ])
     .pipe(gulp.dest('app/js'))
 );
@@ -56,15 +56,15 @@ gulp.task('vendor:css', () =>
 );
 
 /**
- *   Jade :: Compile HTML
+ *   Pug :: Compile HTML
  * -----------------------------------------------------------------------------
  */
-gulp.task('jade', () =>
+gulp.task('pug', () =>
   gulp.src([
-    'src/jade/**/*.jade',
-    '!src/jade/**/_*.jade'
+    'src/pug/**/*.pug',
+    '!src/pug/**/_*.pug'
   ])
-    .pipe($.jade().on('error', $.util.log))
+    .pipe($.pug())
     .pipe($.if('!**/{index,404}.html', $.rename(function (path) {
       path.dirname += '/' + path.basename;
       path.basename = 'index';
