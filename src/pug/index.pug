@@ -6,27 +6,28 @@ block variables
   - var pageClass = "home"
 
 block hero
-  h1 Albert
-  p Prototyping kit based on Pug/Jade, Bootstrap 4, Gulp and Browsersync.
-  p
-    button.btn.btn-danger(href="#{pathRoot}page" type="button") Call to Action
-    button.btn.btn-outline-primary(href="#{pathRoot}page" type="button") Secondary Action
+  h1.display-3 Albert
+  p.lead Prototyping kit based on Pug tamplates and Bootstrap framework. It also uses Gulp and Browsersync for great developer experience.
+  hr.my-4
+  p Iterate on your ideas fast and share them with your customers before you commit to a specific design.
+  p.mt-5
+    button.btn.btn-danger.btn-lg(href=pathRoot + "page" type="button") Call to Action
+    button.btn.btn-primary.btn-lg(href=pathRoot + "page" type="button") Secondary Action
 
 block content
-  h2 Bootstrap Grid
-  .row
+  .row.mb-4
     .col-sm-4
-      h3 The First Column
+      h2 The First Column
       p.
         Curabitur ac luctus massa. Duis est duinum, hendrerit vitae lectus eu,  bibendum semper sapien. Sed ut odio rutrum quam at semper mattis.
     .col-sm-4
-      h3 The Second Column
+      h2 The Second Column
       p.
         Mauris vulputate velit nunc vehicul egestas. Sed ac elit commodo,
         mollis metus at, pellentesq leo. Mauris consequat diam odio, at
         bibendum dolor elementum nec.
     .col-sm-4
-      h3 The Third Column
+      h2 The Third Column
       p.
         Aenean fringill place commodo. Tenean quis them bibendum,
         imperiet congue, henderit mi. Sed vestibulum fringilla tellus,
