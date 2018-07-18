@@ -18,6 +18,6 @@
   },
   "scripts": {
     "start": "gulp",
-    "dist": "gulp build"
+    "build": "gulp build"
   }
 }
