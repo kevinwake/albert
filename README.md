@@ -1,6 +1,6 @@
-# Albert [DEPRECATED]
+# Albert
 
-Prototyping kit based on Pug/Jade, Bootstrap 4, Gulp and Browsersync.
+Prototyping kit based on Pug tamplates and Bootstrap framework. It uses Gulp and Browsersync for great developer experience.
 
 ## Getting started
 
