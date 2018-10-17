@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://spark-rs.netlify.com/* http://spark.radekstangel.com/:splat 301!
